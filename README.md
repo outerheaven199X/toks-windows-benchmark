@@ -49,6 +49,12 @@ Public archive SHA-256: `716833fe83e11ed15d831c3f4d11bfed971be50c1553bae479cb556
 
 Start with [EXPERIMENT_CONTEXT.md](docs/EXPERIMENT_CONTEXT.md). [EDITORIAL_BRIEF.md](docs/EDITORIAL_BRIEF.md) contains reusable copy and facts an editor must preserve. [REPRODUCE.md](docs/REPRODUCE.md) gives exact download/audit commands. `harness/` contains the frozen measurement code for inspection.
 
+## 05 // WINDOWS SUPPORT
+
+The [Windows contribution branch](https://github.com/outerheaven199X/toks/tree/contribution/windows-python-wheels-and-bench) builds native Python wheels without changing the tokenizer algorithm. All five Windows Python build jobs and the Linux regression job passed; the full CPython 3.12 profile reports 330 passed and 38 skipped. See [validation and binary identity](docs/WINDOWS_VALIDATION.md). These fresh build checks are separate from the historical performance run.
+
+An upstream PR could not be opened because the repository currently restricts contributions to collaborators. The branch is available for review; it is not an upstream release. The [Windows optimization study plan](docs/WINDOWS_OPTIMIZATION_PLAN.md) describes a future profiling and measurement pass. It has not been started or scheduled.
+
 Community experiment published by ANTIMEME SYSTEMWORKS. [toks](https://github.com/actual-computer/toks) is Actual Computer's project. The publication does not imply endorsement by Actual Computer or Hugging Face. See [NOTICE.md](NOTICE.md) for source and asset attribution.
 
 AM-RS-2026 // V1.0_BUILD // P.01
