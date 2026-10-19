@@ -2,7 +2,7 @@
 
 # TOKS ON WINDOWS // TOKENIZER BENCHMARK
 
-ANTIMEME SYSTEMWORKS // CREATIVE UTILITIES DIVISION  
+ANTIMEME SYSTEMWORKS // CREATIVE UTILITIES DIVISION
 AM-RS-2026 // V1.0_BUILD // P.01
 
 17–22x on 512-byte inputs; 41–56x on long and batched inputs, where 58–78% of bytes repeat within the pass.

@@ -1,6 +1,6 @@
 # EDITORIAL BRIEF // TOKS ON WINDOWS
 
-ANTIMEME SYSTEMWORKS // CREATIVE UTILITIES DIVISION  
+ANTIMEME SYSTEMWORKS // CREATIVE UTILITIES DIVISION
 AM-RS-2026 // V1.0_BUILD // P.01
 
 ## 01 // READY-TO-USE SUMMARY
@@ -29,8 +29,8 @@ Use ANTIMEME SYSTEMWORKS / CREATIVE UTILITIES DIVISION. Running prose is plain a
 
 ## 04 // LINKS
 
-GitHub: https://github.com/outerheaven199X/toks-windows-benchmark  
-Results Space: https://huggingface.co/spaces/b4ph/toks-windows-benchmark  
+GitHub: https://github.com/outerheaven199X/toks-windows-benchmark
+Results Space: https://huggingface.co/spaces/b4ph/toks-windows-benchmark
 Upstream project: https://github.com/actual-computer/toks
 
 AM-RS-2026 // V1.0_BUILD // P.01

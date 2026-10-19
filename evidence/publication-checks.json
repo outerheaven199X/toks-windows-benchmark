@@ -1,0 +1,26 @@
+{
+  "public_zip_sha256": "716833fe83e11ed15d831c3f4d11bfed971be50c1553bae479cb55687fd956f1",
+  "public_manifest_entries_verified": 328,
+  "extended_audit_checks": 741,
+  "arithmetic_summary_checks": 576,
+  "arithmetic_mismatches": 0,
+  "public_browser": {
+    "charts": 2,
+    "selection": "true",
+    "width": {
+      "viewport": 375,
+      "page": 375,
+      "overflow": []
+    },
+    "errors": [],
+    "broken": []
+  },
+  "local_windows_regression": {
+    "passed": 330,
+    "skipped": 38,
+    "failed": 0,
+    "artifact": "historical audited cp312 wheel",
+    "newly_built_wheel": false
+  },
+  "scope": "Publication/download and regression validation; no new performance measurements."
+}

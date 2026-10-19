@@ -1,3 +1,5 @@
 * text=auto eol=lf
 *.jpg binary
 *.zip binary
+harness/*.py -text whitespace=cr-at-eol
+harness/*.ps1 -text whitespace=cr-at-eol
