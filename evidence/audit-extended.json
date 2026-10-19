@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": 741,
+  "rejected_attempts": 9,
+  "distinct_processes": 237,
+  "parity_text_comparisons": 18624,
+  "timed_calls": 12057696,
+  "timed_token_operations": 7572524771,
+  "max_estimated_other_cpu_percent": 9.484823554138178,
+  "scope": "Receipt consistency and observed guard values; not independent hardware verification."
+}

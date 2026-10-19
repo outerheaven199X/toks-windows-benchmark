@@ -1,0 +1,9 @@
+{
+  "extended_audit_checks_each_copy": 741,
+  "independent_summary_values": 576,
+  "summary_mismatches": 0,
+  "retained_run_json_files_compared": 243,
+  "all_numerical_and_benchmark_identity_fields_equal": true,
+  "corrected_table_rows_identical": true,
+  "performance_rerun": false
+}

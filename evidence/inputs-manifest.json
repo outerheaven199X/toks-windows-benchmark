@@ -1,0 +1,122 @@
+{
+  "models": [
+    {
+      "id": "zai-org/GLM-5.3-Flash",
+      "revision": "46a050bec13002ad29ee795c16e61cf4fa3c4a9c",
+      "directory": "glm",
+      "precision": "native FP8",
+      "tokenizer_file": "tokenizers/glm.json",
+      "tokenizer_sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d",
+      "matches_prior_validation_fixture": true
+    },
+    {
+      "id": "Qwen/Qwen3.8-27B",
+      "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+      "directory": "qwen",
+      "precision": "native BF16",
+      "tokenizer_file": "tokenizers/qwen.json",
+      "tokenizer_sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+      "matches_prior_validation_fixture": true
+    },
+    {
+      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "revision": "1bae0e1088993b9b82de08f59de5be5a34e42170",
+      "directory": "deepseek",
+      "precision": "native mixed MXFP4/MXFP8",
+      "tokenizer_file": "tokenizers/deepseek.json",
+      "tokenizer_sha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b",
+      "matches_prior_validation_fixture": true
+    }
+  ],
+  "sources": [
+    {
+      "path": "tokenizers/glm.json",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash/resolve/46a050bec13002ad29ee795c16e61cf4fa3c4a9c/tokenizer.json",
+      "bytes": 20217442,
+      "sha256": "19e773648cb4e65de8660ea6365e10acca112d42a854923df93db4a6f333a82d"
+    },
+    {
+      "path": "tokenizers/qwen.json",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B/resolve/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/tokenizer.json",
+      "bytes": 12809320,
+      "sha256": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3"
+    },
+    {
+      "path": "tokenizers/deepseek.json",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/resolve/1bae0e1088993b9b82de08f59de5be5a34e42170/tokenizer.json",
+      "bytes": 6367257,
+      "sha256": "c90dfa01249db1be4245780a052ede752e1361c612ac6d08e2bdada7d599476b"
+    },
+    {
+      "path": "corpora/pride-and-prejudice.txt",
+      "url": "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+      "bytes": 772386,
+      "sha256": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75"
+    },
+    {
+      "path": "corpora/pathlib.py",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.12.14/Lib/pathlib.py",
+      "bytes": 51052,
+      "sha256": "10ba48ae8063cfe7589436041d0d4628c05f427c7709cf8e75e486f8930cc32c"
+    },
+    {
+      "path": "corpora/asyncio-base-events.py",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.12.14/Lib/asyncio/base_events.py",
+      "bytes": 78567,
+      "sha256": "53b71bbbd79e7fb2251460119afc379ebd71bbc599d9018313cc62ef218ae795"
+    },
+    {
+      "path": "corpora/dataclasses.py",
+      "url": "https://raw.githubusercontent.com/python/cpython/v3.12.14/Lib/dataclasses.py",
+      "bytes": 62085,
+      "sha256": "d242aea5fcf6408b1c1f622442f88f68b9526ce1f8bd2890d74a144677c427d9"
+    }
+  ],
+  "workloads": [
+    {
+      "name": "short-512B",
+      "file": "inputs/short-512B.json",
+      "sha256": "a2703365caa2cf3836b1d0eb50f928907cc17977ce9d56973e0b8a87d54a21f2",
+      "texts": 1024,
+      "unique_texts": 1024,
+      "utf8_bytes": 524270,
+      "target_bytes_per_text": 512,
+      "batch_size": 1,
+      "threads": 1
+    },
+    {
+      "name": "long-64KiB",
+      "file": "inputs/long-64KiB.json",
+      "sha256": "0dd802902b30136ab4053c9ec0826f9376445cc16641e04bf4bacf8547106f7c",
+      "texts": 32,
+      "unique_texts": 32,
+      "utf8_bytes": 2097152,
+      "target_bytes_per_text": 65536,
+      "batch_size": 1,
+      "threads": 1
+    },
+    {
+      "name": "batch32-1T",
+      "file": "inputs/batch32-1T.json",
+      "sha256": "a5e97064ae4a6c61c7dcc7b858670de2fc5193a929997186b244765f090e0be2",
+      "texts": 1024,
+      "unique_texts": 1024,
+      "utf8_bytes": 4194284,
+      "target_bytes_per_text": 4096,
+      "batch_size": 32,
+      "threads": 1
+    },
+    {
+      "name": "batch32-8T",
+      "file": "inputs/batch32-8T.json",
+      "sha256": "a5e97064ae4a6c61c7dcc7b858670de2fc5193a929997186b244765f090e0be2",
+      "texts": 1024,
+      "unique_texts": 1024,
+      "utf8_bytes": 4194284,
+      "target_bytes_per_text": 4096,
+      "batch_size": 32,
+      "threads": 8
+    }
+  ],
+  "corpus_method": "Equal numbers of English public-domain novel and CPython source slices. Deterministic evenly spaced byte windows; UTF-8 boundary fragments omitted. Windows overlap within each source, so first-pass is fresh tokenizer cache, not guaranteed unique BPE pieces. Inputs are unique within each workload."
+}
